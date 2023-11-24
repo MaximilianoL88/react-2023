@@ -1,7 +1,6 @@
-
+import { Link } from "react-router-dom"
 import CartWidget from "../CartWidget/CartWidget"
 import './NavBar.css'
-
 
 function NavBar(){
     let contador =10
@@ -13,8 +12,8 @@ function NavBar(){
             Papas para todos
             </a>
         <ul className="navbar-nav">
-            <li className="nav-item nav">
-                Inicio
+            <li className="nav-item">
+                <Link className="nav-link" to="/" >Inicio</Link>
             </li>
             <li className="nav-item dropdown">
             <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -22,10 +21,10 @@ function NavBar(){
             </a>
             <ul className="dropdown-menu">
                 <li className="prod">
-                    Papas
+                <Link className="dropdown-item filtro" to="/categoria/producto">Papas</Link>
                 </li>
                 <li>
-                    Papas premium
+                <Link className="dropdown-item filtro" to="/categoria/productoDestacado">Papas premium</Link>
                 </li>
             </ul>
         </li>
