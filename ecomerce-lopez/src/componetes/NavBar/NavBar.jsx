@@ -24,7 +24,7 @@ function NavBar(){
                 <Link className="dropdown-item filtro" to="/categoria/producto">Papas</Link>
                 </li>
                 <li>
-                <Link className="dropdown-item filtro" to="/categoria/productoDestacado">Papas premium</Link>
+                <Link className="dropdown-item filtro" to="/categoria/Destacado">Papas premium</Link>
                 </li>
             </ul>
         </li>
