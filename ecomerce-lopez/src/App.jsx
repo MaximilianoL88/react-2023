@@ -4,6 +4,7 @@ import './App.css'
 import NavBar from "./componetes/NavBar/NavBar"
 import ItemDetailContainer from "./componetes/ItemDetailContainer/ItemDetailContainer"
 import ItemListContainer from "./componetes/ItemListContainer/ItemListContainer"
+import Form from "./componetes/Form/Form"
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Route path="/Detail/:pid" element={ <ItemDetailContainer/>} />  
         <Route path="*" element={<Navigate to="/"/> } /> 
       </Routes>
+      <Form></Form>
    </Router>
 
   )

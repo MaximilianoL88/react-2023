@@ -39,3 +39,9 @@ button.comprar:hover{
   padding: 20px;
   justify-content: center;
 }
+
+h2.load{
+  text-align: center;
+  color: green;
+  
+}

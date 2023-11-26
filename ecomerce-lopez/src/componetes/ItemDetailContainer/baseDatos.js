@@ -16,6 +16,6 @@ export function encontrarProducto(productId){
     return new Promise((resolve)=>{
         setTimeout(()=>{
             resolve(productos.find(prod =>prod.id===productId))
-        },100)
+        },1500)
     })
 }

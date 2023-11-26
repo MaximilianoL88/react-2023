@@ -1,4 +1,5 @@
 import { useState } from "react"
+import "./ItemCounter.css"
 
 const ItemCounter = ({initial=1, stock=10, agregar } )=>{
     const [count, setCount] =useState(initial)
@@ -25,9 +26,9 @@ const ItemCounter = ({initial=1, stock=10, agregar } )=>{
             <p>{count}</p>
         </div>
         <div>
-            <button onClick={sumar}> + </button>
-            <button onClick={restar}> - </button>
-            <button onClick={FuncAgregar}> Agregar </button>
+            <button onClick={sumar} className="sumar"> + </button>
+            <button onClick={restar} className="restar"> - </button>
+            <button onClick={FuncAgregar} className="agregar"> Agregar </button>
         </div>
     </div>
     )
